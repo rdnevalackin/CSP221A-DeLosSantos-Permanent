@@ -101,7 +101,6 @@ class DroneRobot(Robot):
     def __init__(self, name, battery=100, max_altitude=100):
         super().__init__(name, battery)
         self.max_altitude = max_altitude
-        self.flight_mode = "normal"
 
     def perform_task(self, **kwargs):
         """Fly the drone to a specified altitude."""
