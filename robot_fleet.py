@@ -86,6 +86,7 @@ class CleaningRobot(Robot):
     def __init__(self, name, battery=100, dust_capacity=50):
         super().__init__(name, battery)
         self.dust_capacity = dust_capacity
+        self.cleaning_mode = "standard"
 
     @log_action
     def perform_task(self, **kwargs):
